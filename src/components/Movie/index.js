@@ -86,7 +86,6 @@ const Movie = () => {
   let { id } = useParams();
 
   useEffect(() => {
-    console.log(id);
     if (!movie) {
       setMovieId(id);
     }

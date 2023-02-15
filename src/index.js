@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div> loading</div>}>
         <App />
       </Suspense>
     </RecoilRoot>

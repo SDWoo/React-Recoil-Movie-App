@@ -13,7 +13,6 @@ export const MovieList = selector({
         pageState
       )}`
     );
-    console.log(data);
 
     return data.Search;
   },
@@ -23,7 +22,6 @@ export const DetailMovie = selector({
   key: 'DetailMovie',
   get: async ({ get }) => {
     const movieID = get(movieId);
-    console.log(movieID);
     const { data } = await axios(
       `${API_END_POINT}?apikey=${API_KEY}&i=${movieID}&plot=full`
     );
